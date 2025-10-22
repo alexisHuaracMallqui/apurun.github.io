@@ -13,7 +13,7 @@
     .card{background:var(--card);border-radius:12px;padding:22px;box-shadow:0 6px 18px rgba(15,23,42,0.06);margin-top:18px}
     .muted{color:#4a5568;font-size:0.95rem}
     section+section{margin-top:18px}
-    footer{margin-top:28px;font-size:0.9rem;color:#4a5568}
+    footer{margin-top:28px;font-size:0.9rem;color:#4a5568'}
     a{color:var(--accent);text-decoration:none}
     pre{background:#eef2f7;padding:12px;border-radius:8px;overflow:auto}
   </style>
@@ -24,58 +24,107 @@
       <div style="width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,#2b6cb0,#63b3ed);display:flex;align-items:center;justify-content:center;color:white;font-weight:700">APU</div>
       <div>
         <h1>Política de Privacidad — APU Run</h1>
-        <div class="muted">Documento público para Play Store</div>
+        <div class="muted">Documento público para Play Store — Última actualización: <strong>21 de octubre de 2025</strong></div>
       </div>
     </header>
 
     <main class="card">
       <section>
         <h2>1. Introducción</h2>
-        <p>En APU Run ("la App") respetamos tu privacidad. Esta política describe qué datos recopilamos, por qué lo hacemos y cómo puedes contactarnos.</p>
+        <p>En APU Run ("la App") respetamos tu privacidad y queremos que entiendas claramente cómo tratamos tus datos. Esta política explica qué datos recopilamos, por qué los usamos, con quién los compartimos, cuánto tiempo los retenemos y cómo puedes ejercer tus derechos.</p>
       </section>
 
       <section>
-        <h2>2. Datos que recopilamos</h2>
+        <h2>2. Quiénes somos y contacto</h2>
+        <p>Responsable: APU Run.<br>Contacto para consultas y solicitudes de derechos: <strong>alexis@tucorreo.com</strong>.</p>
+      </section>
+
+      <section>
+        <h2>3. Datos que recopilamos</h2>
         <ul>
-          <li>Datos que proporcionas: correo electrónico, nombre (si registras cuenta).</li>
-          <li>Datos técnicos: identificadores del dispositivo, sistema operativo, versión de la app.</li>
-          <li>Datos de uso: métricas de uso y eventos (ej. sesiones, funciones utilizadas) para analytics.</li>
-          <li>Ubicación: solo si explícitamente das permiso (en caso de funciones de ruta o seguimiento en tiempo real).</li>
+          <li><strong>Datos que subes voluntariamente:</strong> historial y datos de entrenamiento (archivos o sincronización desde tu dispositivo o proveedor como Garmin).</li>
+          <li><strong>Conversaciones con el agente AI:</strong> mensajes y prompts que envíes al coach dentro de la app.</li>
+          <li><strong>Datos de autenticación:</strong> correo y credenciales gestionadas por Google Firebase (inicio de sesión con Google).</li>
+          <li><strong>Datos técnicos y de uso:</strong> identificadores del dispositivo, tipo de sistema operativo, versión de la app, logs de errores y eventos de uso para analytics y mejoras.</li>
+          <li><strong>Ubicación:</strong> solo si explícitamente das permiso para funciones de seguimiento de rutas. No se solicita por defecto.</li>
         </ul>
       </section>
 
       <section>
-        <h2>3. Finalidad</h2>
-        <p>Usamos los datos para:</p>
+        <h2>4. Finalidad del tratamiento</h2>
+        <p>Usamos tus datos para los siguientes fines:</p>
         <ul>
-          <li>Proveer y mejorar las funciones de la app.</li>
-          <li>Soporte y comunicaciones relacionadas con la cuenta.</li>
-          <li>Analytics y diagnóstico para mantener rendimiento y calidad.</li>
+          <li>Generar planes personalizados de entrenamiento mediante IA basados en tu historial y métricas.</li>
+          <li>Interpretar y simplificar las métricas de tu reloj (por ejemplo Garmin) para ofrecer explicaciones y recomendaciones acciónales.</li>
+          <li>Proveer el servicio (autenticación, sincronización, almacenamiento temporal de archivos).</li>
+          <li>Soporte al usuario y comunicación relacionada con la cuenta.</li>
+          <li>Analytics y diagnóstico para mejorar la app y corregir errores.</li>
+          <li>Investigación y mejora de modelos (en caso de que aceptes explícitamente que tus conversaciones se usen para mejora — ver apartado de consentimiento).</li>
         </ul>
       </section>
 
       <section>
-        <h2>4. Compartir con terceros</h2>
-        <p>Podemos compartir datos con proveedores de terceros que nos ayudan a operar la app (por ejemplo: Firebase, Google Analytics, servicios de notificaciones). No vendemos tus datos.</p>
+        <h2>5. Almacenamiento y retención</h2>
+        <p>Detallamos cómo y cuánto tiempo almacenamos distintos tipos de datos:</p>
+        <ul>
+          <li><strong>Datos de entrenamiento subidos / sincronizados:</strong> se almacenan en Blob Storage (por ejemplo, Azure Blob Storage) para su procesamiento. Estos archivos se eliminan automáticamente dentro de las <strong>24 horas</strong> posteriores a su subida, salvo que el usuario solicite otro tratamiento o guarde explícitamente un backup en su cuenta.</li>
+          <li><strong>Conversaciones con el agente AI:</strong> se conservan por defecto hasta <strong>30 días</strong> para permitir recuperación de contexto y soporte técnico. Puedes solicitar su eliminación antes de ese plazo (ver sección 8).</li>
+          <li><strong>Datos de autenticación (Firebase):</strong> la gestión de credenciales y tokens la realiza Google Firebase según sus políticas; nosotros almacenamos el identificador del usuario y metadatos necesarios para la cuenta.</li>
+          <li><strong>Logs y analytics:</strong> se conservan durante periodos limitados para diagnóstico (habitualmente 90 días), y se agregan/anónimizan cuando es posible.</li>
+          <li>Cuando la ley lo exija (por ejemplo para responsabilidades legales), podremos retener algunos datos por más tiempo, siempre con las garantías adecuadas.</li>
+        </ul>
       </section>
 
       <section>
-        <h2>5. Seguridad y retención</h2>
-        <p>Mantenemos medidas técnicas y organizativas razonables para proteger la información. Conservaremos los datos mientras sea necesario para los fines descritos o según requiera la ley.</p>
+        <h2>6. Compartir datos con terceros</h2>
+        <p>Para operar la app podemos compartir datos con proveedores de servicios que actúan como encargados del tratamiento, incluyendo, entre otros:</p>
+        <ul>
+          <li><strong>Google Firebase:</strong> autenticación y servicios relacionados.</li>
+          <li><strong>Proveedor de Blob Storage (por ejemplo Azure Blob Storage):</strong> almacenamiento temporal de archivos de entrenamiento.</li>
+          <li><strong>Servicios de análisis y comunicación:</strong> herramientas de analytics y envío de notificaciones (ej. Google Analytics, servicios de notificaciones push).</li>
+        </ul>
+        <p>No vendemos tus datos personales a terceros bajo ninguna circunstancia.</p>
       </section>
 
       <section>
-        <h2>6. Derechos y contacto</h2>
-        <p>Puedes solicitar acceso, rectificación o eliminación de tus datos escribiendo a: <strong>alexis@tucorreo.com</strong>.</p>
+        <h2>7. Seguridad</h2>
+        <p>Adoptamos medidas técnicas y organizativas apropiadas para proteger tus datos, incluyendo:</p>
+        <ul>
+          <li>Transmisión cifrada (HTTPS/TLS) para todas las comunicaciones entre la app y nuestros servidores.</li>
+          <li>Cifrado de datos en reposo cuando sea posible en los proveedores de almacenamiento.</li>
+          <li>Controles de acceso y autenticación mediante Firebase para gestionar permisos de personal y servicios.</li>
+          <li>Revisión periódica de prácticas de seguridad y gestión de incidencias.</li>
+        </ul>
       </section>
 
       <section>
-        <h2>7. Cambios</h2>
-        <p>Podemos actualizar esta política; la versión publicada aquí será la vigente. Fecha de última actualización: <strong>21 de octubre de 2025</strong>.</p>
+        <h2>8. Derechos y cómo ejercerlos</h2>
+        <p>Tienes derecho a acceder, rectificar, solicitar la eliminación o solicitar la portabilidad de tus datos. Para ejercer estos derechos, contáctanos a <strong>alexis@tucorreo.com</strong> indicando:</p>
+        <ol>
+          <li>Tu nombre y correo asociado a la cuenta.</li>
+          <li>Qué derecho deseas ejercer (ej. eliminación de conversaciones, eliminación de datos de entrenamiento subidos el día X).</li>
+          <li>Prueba razonable de identidad si es necesario para proteger la cuenta.</li>
+        </ol>
+        <p>Solicitudes de eliminación de datos de entrenamiento o conversaciones serán atendidas en un plazo razonable y confirmaremos por correo la ejecución de la solicitud.</p>
+      </section>
+
+      <section>
+        <h2>9. Edad mínima</h2>
+        <p>La app está destinada a personas mayores de <strong>18 años</strong>. No está diseñada para su uso por menores; si sospechamos que una cuenta pertenece a un menor, podremos suspenderla y solicitar comprobación de edad.</p>
+      </section>
+
+      <section>
+        <h2>10. Consentimiento y opciones</h2>
+        <p>Al usar la app aceptas esta política y consientes el tratamiento de datos según lo descrito. Para funciones opcionales (por ejemplo, uso explícito de conversaciones para entrenar modelos), solicitaremos un consentimiento adicional y claro.</p>
+      </section>
+
+      <section>
+        <h2>11. Cambios en esta política</h2>
+        <p>Podemos actualizar esta política. La versión publicada en esta página indicará la fecha de la última actualización. Fecha de última actualización: <strong>21 de octubre de 2025</strong>.</p>
       </section>
 
       <footer>
-        Si necesitas que personalice esta política (por ejemplo: mencione Firebase, AdMob u otros proveedores específicos), dímelo y la adapto.
+        Si quieres que mencione proveedores adicionales (por ejemplo: AdMob, servicios concretos de analytics o ubicación), o que ajuste los plazos de retención (por ejemplo: eliminar conversaciones inmediatamente), dime qué prefieres y actualizo el documento.
       </footer>
     </main>
   </div>
