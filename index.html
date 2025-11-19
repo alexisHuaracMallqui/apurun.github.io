@@ -1,132 +1,545 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>APU Run — Política de Privacidad</title>
-  <style>
-    :root{--bg:#f7fafc;--card:#ffffff;--accent:#2b6cb0;--text:#1a202c}
-    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial; background:var(--bg); color:var(--text); margin:0;padding:32px}
-    .wrap{max-width:900px;margin:0 auto}
-    header{display:flex;align-items:center;gap:16px}
-    h1{margin:0;font-size:1.6rem}
-    .card{background:var(--card);border-radius:12px;padding:22px;box-shadow:0 6px 18px rgba(15,23,42,0.06);margin-top:18px}
-    .muted{color:#4a5568;font-size:0.95rem}
-    section+section{margin-top:18px}
-    footer{margin-top:28px;font-size:0.9rem;color:#4a5568'}
-    a{color:var(--accent);text-decoration:none}
-    pre{background:#eef2f7;padding:12px;border-radius:8px;overflow:auto}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad - APU RUN</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        h1, h2, h3 { color: #222; margin-top: 1.5em; }
+        h1 { border-bottom: 3px solid #007AFF; padding-bottom: 10px; }
+        h2 { border-left: 4px solid #007AFF; padding-left: 10px; }
+        table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        th { background-color: #f2f2f2; font-weight: bold; }
+        ul, ol { margin: 10px 0; padding-left: 20px; }
+        li { margin: 8px 0; }
+        strong { color: #007AFF; }
+        .warning { background-color: #fff3cd; padding: 15px; border-left: 4px solid #ffc107; margin: 15px 0; }
+        .important { background-color: #e7f3ff; padding: 15px; border-left: 4px solid #007AFF; margin: 15px 0; }
+        a { color: #007AFF; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .last-updated { font-size: 0.9em; color: #666; margin-top: 30px; padding-top: 15px; border-top: 1px solid #ddd; }
+    </style>
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <div style="width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,#2b6cb0,#63b3ed);display:flex;align-items:center;justify-content:center;color:white;font-weight:700">APU</div>
-      <div>
-        <h1>Política de Privacidad — APU Run</h1>
-        <div class="muted">Documento público para Play Store — Última actualización: <strong>21 de octubre de 2025</strong></div>
-      </div>
-    </header>
 
-    <main class="card">
-      <section>
-        <h2>1. Introducción</h2>
-        <p>En APU Run ("la App") respetamos tu privacidad y queremos que entiendas claramente cómo tratamos tus datos. Esta política explica qué datos recopilamos, por qué los usamos, con quién los compartimos, cuánto tiempo los retenemos y cómo puedes ejercer tus derechos.</p>
-      </section>
+<h1>POLÍTICA DE PRIVACIDAD - APU RUN</h1>
 
-      <section>
-        <h2>2. Quiénes somos y contacto</h2>
-        <p>Responsable: APU Run.<br>Contacto para consultas y solicitudes de derechos: <strong>alexis@tucorreo.com</strong>.</p>
-      </section>
+<div class="important">
+    <strong>Última actualización:</strong> Noviembre 2025<br>
+    <strong>Aplicación:</strong> APU RUN (com.ahuaracm.apurun)<br>
+    <strong>Desarrollador:</strong> Teita.ai
+</div>
 
-      <section>
-        <h2>3. Datos que recopilamos</h2>
-        <ul>
-          <li><strong>Datos que subes voluntariamente:</strong> historial y datos de entrenamiento (archivos o sincronización desde tu dispositivo o proveedor como Garmin).</li>
-          <li><strong>Conversaciones con el agente AI:</strong> mensajes y prompts que envíes al coach dentro de la app.</li>
-          <li><strong>Datos de autenticación:</strong> correo y credenciales gestionadas por Google Firebase (inicio de sesión con Google).</li>
-          <li><strong>Datos técnicos y de uso:</strong> identificadores del dispositivo, tipo de sistema operativo, versión de la app, logs de errores y eventos de uso para analytics y mejoras.</li>
-          <li><strong>Ubicación:</strong> solo si explícitamente das permiso para funciones de seguimiento de rutas. No se solicita por defecto.</li>
-        </ul>
-      </section>
+<h2>1. INTRODUCCIÓN Y DEFINICIONES</h2>
 
-      <section>
-        <h2>4. Finalidad del tratamiento</h2>
-        <p>Usamos tus datos para los siguientes fines:</p>
-        <ul>
-          <li>Generar planes personalizados de entrenamiento mediante IA basados en tu historial y métricas.</li>
-          <li>Interpretar y simplificar las métricas de tu reloj (por ejemplo Garmin) para ofrecer explicaciones y recomendaciones acciónales.</li>
-          <li>Proveer el servicio (autenticación, sincronización, almacenamiento temporal de archivos).</li>
-          <li>Soporte al usuario y comunicación relacionada con la cuenta.</li>
-          <li>Analytics y diagnóstico para mejorar la app y corregir errores.</li>
-          <li>Investigación y mejora de modelos (en caso de que aceptes explícitamente que tus conversaciones se usen para mejora — ver apartado de consentimiento).</li>
-        </ul>
-      </section>
+<p>APU RUN ("la Aplicación", "Nosotros", "Nuestro" o "Teita.ai") es una aplicación móvil de asistencia personalizada en entrenamientos (coaching de IA) disponible en Google Play Store.</p>
 
-      <section>
-        <h2>5. Almacenamiento y retención</h2>
-        <p>Detallamos cómo y cuánto tiempo almacenamos distintos tipos de datos:</p>
-        <ul>
-          <li><strong>Datos de entrenamiento subidos / sincronizados:</strong> se almacenan en Blob Storage (por ejemplo, Azure Blob Storage) para su procesamiento. Estos archivos se eliminan automáticamente dentro de las <strong>24 horas</strong> posteriores a su subida, salvo que el usuario solicite otro tratamiento o guarde explícitamente un backup en su cuenta.</li>
-          <li><strong>Conversaciones con el agente AI:</strong> se conservan por defecto hasta <strong>30 días</strong> para permitir recuperación de contexto y soporte técnico. Puedes solicitar su eliminación antes de ese plazo (ver sección 8).</li>
-          <li><strong>Datos de autenticación (Firebase):</strong> la gestión de credenciales y tokens la realiza Google Firebase según sus políticas; nosotros almacenamos el identificador del usuario y metadatos necesarios para la cuenta.</li>
-          <li><strong>Logs y analytics:</strong> se conservan durante periodos limitados para diagnóstico (habitualmente 90 días), y se agregan/anónimizan cuando es posible.</li>
-          <li>Cuando la ley lo exija (por ejemplo para responsabilidades legales), podremos retener algunos datos por más tiempo, siempre con las garantías adecuadas.</li>
-        </ul>
-      </section>
+<p><strong>Objetivo:</strong> Proporcionar planes de entrenamiento personalizados basados en inteligencia artificial, analizando documentos históricos del usuario y creando programas de ejercicio adaptados a sus necesidades.</p>
 
-      <section>
-        <h2>6. Compartir datos con terceros</h2>
-        <p>Para operar la app podemos compartir datos con proveedores de servicios que actúan como encargados del tratamiento, incluyendo, entre otros:</p>
-        <ul>
-          <li><strong>Google Firebase:</strong> autenticación y servicios relacionados.</li>
-          <li><strong>Proveedor de Blob Storage (por ejemplo Azure Blob Storage):</strong> almacenamiento temporal de archivos de entrenamiento.</li>
-          <li><strong>Servicios de análisis y comunicación:</strong> herramientas de analytics y envío de notificaciones (ej. Google Analytics, servicios de notificaciones push).</li>
-        </ul>
-        <p>No vendemos tus datos personales a terceros bajo ninguna circunstancia.</p>
-      </section>
+<p><strong>Controlador de Datos:</strong> Teita.ai - Responsable del procesamiento de datos personales conforme a GDPR, CCPA y leyes de protección de datos aplicables.</p>
 
-      <section>
-        <h2>7. Seguridad</h2>
-        <p>Adoptamos medidas técnicas y organizativas apropiadas para proteger tus datos, incluyendo:</p>
-        <ul>
-          <li>Transmisión cifrada (HTTPS/TLS) para todas las comunicaciones entre la app y nuestros servidores.</li>
-          <li>Cifrado de datos en reposo cuando sea posible en los proveedores de almacenamiento.</li>
-          <li>Controles de acceso y autenticación mediante Firebase para gestionar permisos de personal y servicios.</li>
-          <li>Revisión periódica de prácticas de seguridad y gestión de incidencias.</li>
-        </ul>
-      </section>
+<h2>2. INFORMACIÓN QUE RECOPILAMOS</h2>
 
-      <section>
-        <h2>8. Derechos y cómo ejercerlos</h2>
-        <p>Tienes derecho a acceder, rectificar, solicitar la eliminación o solicitar la portabilidad de tus datos. Para ejercer estos derechos, contáctanos a <strong>alexis@tucorreo.com</strong> indicando:</p>
-        <ol>
-          <li>Tu nombre y correo asociado a la cuenta.</li>
-          <li>Qué derecho deseas ejercer (ej. eliminación de conversaciones, eliminación de datos de entrenamiento subidos el día X).</li>
-          <li>Prueba razonable de identidad si es necesario para proteger la cuenta.</li>
-        </ol>
-        <p>Solicitudes de eliminación de datos de entrenamiento o conversaciones serán atendidas en un plazo razonable y confirmaremos por correo la ejecución de la solicitud.</p>
-      </section>
+<h3>2.1 Datos que proporcionas directamente</h3>
 
-      <section>
-        <h2>9. Edad mínima</h2>
-        <p>La app está destinada a personas mayores de <strong>18 años</strong>. No está diseñada para su uso por menores; si sospechamos que una cuenta pertenece a un menor, podremos suspenderla y solicitar comprobación de edad.</p>
-      </section>
+<table>
+    <tr>
+        <th>Tipo de Dato</th>
+        <th>Descripción</th>
+        <th>Propósito</th>
+    </tr>
+    <tr>
+        <td><strong>Email</strong></td>
+        <td>Tu dirección de correo electrónico</td>
+        <td>Autenticación, comunicaciones, recuperación de cuenta</td>
+    </tr>
+    <tr>
+        <td><strong>Nombre</strong></td>
+        <td>Tu nombre o nombre de usuario</td>
+        <td>Personalización de la experiencia</td>
+    </tr>
+    <tr>
+        <td><strong>Foto de Perfil</strong></td>
+        <td>Avatar o imagen de perfil opcional</td>
+        <td>Identificación visual en la app</td>
+    </tr>
+    <tr>
+        <td><strong>Documentos de Entrenamientos</strong></td>
+        <td>PDFs, imágenes o archivos con historial de entrenamientos</td>
+        <td>Análisis de IA para generar planes personalizados</td>
+    </tr>
+    <tr>
+        <td><strong>Conversaciones con Coach IA</strong></td>
+        <td>Chats y interacciones con el asistente</td>
+        <td>Mejora del modelo de IA y soporte personalizado</td>
+    </tr>
+    <tr>
+        <td><strong>Información del Suscripción</strong></td>
+        <td>Historial de compras, planes adquiridos</td>
+        <td>Gestión de suscripción y acceso a funciones</td>
+    </tr>
+</table>
 
-      <section>
-        <h2>10. Consentimiento y opciones</h2>
-        <p>Al usar la app aceptas esta política y consientes el tratamiento de datos según lo descrito. Para funciones opcionales (por ejemplo, uso explícito de conversaciones para entrenar modelos), solicitaremos un consentimiento adicional y claro.</p>
-      </section>
+<h3>2.2 Datos recopilados automáticamente</h3>
 
-      <section>
-        <h2>11. Cambios en esta política</h2>
-        <p>Podemos actualizar esta política. La versión publicada en esta página indicará la fecha de la última actualización. Fecha de última actualización: <strong>21 de octubre de 2025</strong>.</p>
-      </section>
+<table>
+    <tr>
+        <th>Tipo de Dato</th>
+        <th>Fuente</th>
+        <th>Propósito</th>
+    </tr>
+    <tr>
+        <td><strong>Android Device ID</strong></td>
+        <td>Sistema operativo + Firebase</td>
+        <td>Identificación única del dispositivo para seguridad y autenticación</td>
+    </tr>
+    <tr>
+        <td><strong>Google Advertising ID</strong></td>
+        <td>Google Play Services</td>
+        <td>Análisis, prevención de fraude, cumplimiento normativo</td>
+    </tr>
+    <tr>
+        <td><strong>Información del Dispositivo</strong></td>
+        <td>Sistema operativo</td>
+        <td>Compatibilidad, debugging, análisis de rendimiento</td>
+    </tr>
+    <tr>
+        <td><strong>Dirección IP</strong></td>
+        <td>Conexión de red</td>
+        <td>Conexión a servidores, prevención de fraude</td>
+    </tr>
+    <tr>
+        <td><strong>Zona Horaria</strong></td>
+        <td>Configuración del dispositivo</td>
+        <td>Función de alarmas personalizadas</td>
+    </tr>
+    <tr>
+        <td><strong>Datos de Uso</strong></td>
+        <td>Firebase Analytics (opcional)</td>
+        <td>Mejora de funcionalidades, análisis de comportamiento</td>
+    </tr>
+    <tr>
+        <td><strong>Logs de Error</strong></td>
+        <td>Aplicación</td>
+        <td>Debugging y mejora de estabilidad</td>
+    </tr>
+</table>
 
-      <footer>
-        Si quieres que mencione proveedores adicionales (por ejemplo: AdMob, servicios concretos de analytics o ubicación), o que ajuste los plazos de retención (por ejemplo: eliminar conversaciones inmediatamente), dime qué prefieres y actualizo el documento.
-      </footer>
-    </main>
-  </div>
+<h3>2.3 Datos de servicios de terceros</h3>
+
+<table>
+    <tr>
+        <th>Tercero</th>
+        <th>Datos Compartidos</th>
+        <th>Propósito</th>
+    </tr>
+    <tr>
+        <td><strong>Firebase (Google)</strong></td>
+        <td>Email, Device ID, Advertising ID, datos de uso</td>
+        <td>Autenticación, almacenamiento, análisis de seguridad</td>
+    </tr>
+    <tr>
+        <td><strong>Google Sign-In</strong></td>
+        <td>Email, Nombre, Foto, Google Account ID</td>
+        <td>Autenticación rápida opcional</td>
+    </tr>
+    <tr>
+        <td><strong>Apple Sign-In</strong></td>
+        <td>Email, Identificador de usuario de Apple (iOS)</td>
+        <td>Autenticación rápida opcional (iOS)</td>
+    </tr>
+    <tr>
+        <td><strong>Azure Blob Storage</strong></td>
+        <td>Documentos de entrenamientos (temporal)</td>
+        <td>Almacenamiento seguro para procesamiento de IA</td>
+    </tr>
+</table>
+
+<div class="important">
+    <strong>Nota importante sobre identificadores:</strong> El Device ID y Google Advertising ID son recopilados automáticamente por Firebase y Google Play Services para propósitos de seguridad y autenticación. No podemos deshabilitarlos sin comprometer la seguridad de tu cuenta.
+</div>
+
+<h2>3. CÓMO USAMOS TUS DATOS</h2>
+
+<h3>3.1 Autenticación y Seguridad (Firebase)</h3>
+
+<p>Utilizamos Firebase para:</p>
+<ul>
+    <li><strong>Autenticación segura:</strong> Verificar que eres tú quien accede a tu cuenta</li>
+    <li><strong>Prevención de fraude:</strong> Detectar acceso no autorizado usando Device ID</li>
+    <li><strong>Almacenamiento encriptado:</strong> Proteger tus datos en reposo</li>
+    <li><strong>Seguridad de datos:</strong> Cumplir con estándares de seguridad de Google</li>
+</ul>
+
+<p><strong>Datos utilizados:</strong> Device ID, Advertising ID, Email, IP address</p>
+
+<p>Consulta la <a href="https://firebase.google.com/support/privacy" target="_blank">Política de Privacidad de Firebase</a> y los <a href="https://firebase.google.com/support/data-residency" target="_blank">Términos de Procesamiento de Datos de Google</a>.</p>
+
+<h3>3.2 Análisis de IA y Generación de Planes</h3>
+
+<p>Los documentos que cargas (PDFs, imágenes de entrenamientos) se procesan mediante:</p>
+<ul>
+    <li><strong>Agentes de IA:</strong> Para analizar tu historial de entrenamientos</li>
+    <li><strong>Modelos de procesamiento:</strong> Para extraer información relevante</li>
+    <li><strong>Generación personalizada:</strong> Para crear planes adaptados a ti</li>
+</ul>
+
+<p><strong>Retención:</strong> Los documentos se almacenan temporalmente en Azure Blob Storage y se eliminan automáticamente después del procesamiento (máximo 30 días).</p>
+
+<p><strong>Compartición:</strong> Los documentos SOLO se comparten con Azure (infraestructura de Microsoft) y nuestros servidores de IA. No se venden ni se comparten con publicidad.</p>
+
+<h3>3.3 Funciones de Alarma</h3>
+
+<p>La función de alarmas personalizadas:</p>
+<ul>
+    <li><strong>Se ejecuta localmente:</strong> Mayormente en tu dispositivo</li>
+    <li><strong>Usa Device ID:</strong> Para asociar alarmas a tu cuenta</li>
+    <li><strong>Usa zona horaria:</strong> Para disparar alarmas a la hora correcta</li>
+    <li><strong>Envía notificaciones:</strong> A través de Google Firebase Cloud Messaging</li>
+</ul>
+
+<p><strong>No usamos:</strong> GPS, ubicación exacta, o cualquier dato de localización precisa.</p>
+
+<h3>3.4 Comunicaciones</h3>
+
+<p>Podemos enviarte:</p>
+<ul>
+    <li>Notificaciones sobre tu suscripción o alertas de seguridad</li>
+    <li>Actualizaciones de la app o cambios de política (si lo autorizas)</li>
+    <li>Respuestas a preguntas de soporte</li>
+</ul>
+
+<p><strong>Puedes optar por no recibir:</strong> Notificaciones de marketing en cualquier momento desde configuración.</p>
+
+<h2>4. COMPARTICIÓN DE DATOS CON TERCEROS</h2>
+
+<p>Compartimos datos solo con:</p>
+
+<table>
+    <tr>
+        <th>Tercero</th>
+        <th>Tipo de Datos</th>
+        <th>Base Legal</th>
+        <th>Ubicación</th>
+    </tr>
+    <tr>
+        <td><strong>Firebase / Google Cloud</strong></td>
+        <td>Email, Device ID, logs</td>
+        <td>Procesamiento necesario</td>
+        <td>US/EU (según config)</td>
+    </tr>
+    <tr>
+        <td><strong>Azure Blob Storage</strong></td>
+        <td>Documentos de entrenamiento</td>
+        <td>Procesamiento necesario</td>
+        <td>US</td>
+    </tr>
+    <tr>
+        <td><strong>Google Analytics (opcional)</strong></td>
+        <td>Datos de uso anónimos</td>
+        <td>Análisis de mejora</td>
+        <td>US/EU</td>
+    </tr>
+</table>
+
+<p><strong>NO compartimos tu información con:</strong></p>
+<ul>
+    <li>Publicidad/redes publicitarias para targeting</li>
+    <li>Data brokers o vendedores de datos</li>
+    <li>Gobiernos (excepto orden judicial válida)</li>
+    <li>Otros usuarios de la app (excepto para funciones colaborativas que autorices)</li>
+</ul>
+
+<h2>5. DERECHOS DEL USUARIO (GDPR, CCPA, LGPD)</h2>
+
+<div class="important">
+    <strong>Derechos que tienes sobre tus datos:</strong>
+</div>
+
+<h3>5.1 Derecho de Acceso</h3>
+<p><strong>¿Qué es?</strong> Puedes solicitar una copia de todos tus datos personales que procesamos.</p>
+<p><strong>¿Cómo solicitarlo?</strong> Envía un email a <strong>privacy@teita.ai</strong> con asunto "Solicitud de Acceso GDPR".</p>
+
+<h3>5.2 Derecho de Rectificación</h3>
+<p><strong>¿Qué es?</strong> Puedes corregir datos incorrectos (ej: tu nombre está mal escrito).</p>
+<p><strong>¿Cómo hacerlo?</strong> Edita directamente en tu perfil de la app o contacta al email anterior.</p>
+
+<h3>5.3 Derecho al Olvido (Derecho a la Eliminación)</h3>
+<p><strong>¿Qué es?</strong> Puedes solicitar que eliminemos tus datos personales.</p>
+<p><strong>Limitaciones:</strong> Podemos retener:</p>
+<ul>
+    <li>Datos requeridos por ley (registros de transacciones por 6 años)</li>
+    <li>Datos necesarios para resolver disputas</li>
+    <li>Datos anónimizados para análisis</li>
+</ul>
+
+<h3>5.4 Derecho a la Portabilidad</h3>
+<p><strong>¿Qué es?</strong> Puedes obtener tus datos en formato estructurado (JSON/CSV) para transferir a otro servicio.</p>
+
+<h3>5.5 Derecho de Oposición</h3>
+<p><strong>¿Qué es?</strong> Puedes objetar ciertos tipos de procesamiento.</p>
+<p><strong>Ejemplo:</strong> Oponerte a análisis para personalización (aunque limitará funcionalidades).</p>
+
+<h3>5.6 Derechos Relacionados con Toma de Decisiones Automatizada</h3>
+<p><strong>¿Qué es?</strong> La IA puede hacer recomendaciones, pero siempre tienes derecho a revisión humana.</p>
+<p><strong>Contacto:</strong> privacy@teita.ai</p>
+
+<div class="warning">
+    <strong>¿CÓMO EJERCER TUS DERECHOS?</strong><br>
+    Email: <strong>privacy@teita.ai</strong><br>
+    Asunto: [Especifica: "Derecho de Acceso", "Derecho al Olvido", etc.]<br>
+    Incluye: Tu email de cuenta + identificación<br>
+    <strong>Tiempo de respuesta:</strong> Máximo 30 días
+</div>
+
+<h2>6. SEGURIDAD DE DATOS</h2>
+
+<p>Implementamos múltiples capas de seguridad:</p>
+
+<table>
+    <tr>
+        <th>Medida de Seguridad</th>
+        <th>Descripción</th>
+    </tr>
+    <tr>
+        <td><strong>Cifrado en Tránsito</strong></td>
+        <td>HTTPS/TLS para todas las conexiones. Los datos están cifrados mientras se transmiten entre tu dispositivo y nuestros servidores.</td>
+    </tr>
+    <tr>
+        <td><strong>Cifrado en Reposo</strong></td>
+        <td>Firebase Database está cifrada. Azure Blob Storage usa encriptación de Microsoft.</td>
+    </tr>
+    <tr>
+        <td><strong>Autenticación Fuerte</strong></td>
+        <td>Password hasheado con bcrypt + Device ID para verificación de dispositivo.</td>
+    </tr>
+    <tr>
+        <td><strong>Firebase Security Rules</strong></td>
+        <td>Control de acceso granular: cada usuario solo puede ver sus propios datos.</td>
+    </tr>
+    <tr>
+        <td><strong>Dos Factores (2FA)</strong></td>
+        <td>Disponible para cuenta de usuario (via email de confirmación).</td>
+    </tr>
+    <tr>
+        <td><strong>Monitoreo de Intrusiones</strong></td>
+        <td>Google y Microsoft monitorean automáticamente acceso sospechoso.</td>
+    </tr>
+    <tr>
+        <td><strong>Auditoría de Acceso</strong></td>
+        <td>Se registran todos los accesos a datos sensibles.</td>
+    </tr>
+</table>
+
+<div class="important">
+    <strong>Nota:</strong> Aunque implementamos seguridad robusta, ningún sistema es 100% seguro. Te responsabilizamos de mantener tu contraseña confidencial.
+</div>
+
+<h2>7. RETENCIÓN DE DATOS</h2>
+
+<table>
+    <tr>
+        <th>Tipo de Dato</th>
+        <th>Período de Retención</th>
+        <th>Justificación</th>
+    </tr>
+    <tr>
+        <td>Email, Nombre, Perfil</td>
+        <td>Mientras la cuenta esté activa + 90 días después</td>
+        <td>Necesario para acceso y recuperación</td>
+    </tr>
+    <tr>
+        <td>Documentos de Entrenamiento</td>
+        <td>30 días máximo (después de procesamiento)</td>
+        <td>Necesario para generar planes</td>
+    </tr>
+    <tr>
+        <td>Historial de Transacciones</td>
+        <td>6 años</td>
+        <td>Requerido por ley fiscal</td>
+    </tr>
+    <tr>
+        <td>Conversaciones Chat</td>
+        <td>1 año o mientras activas el histórico</td>
+        <td>Historial de coaching y referencia</td>
+    </tr>
+    <tr>
+        <td>Logs de Acceso</td>
+        <td>90 días</td>
+        <td>Seguridad y debugging</td>
+    </tr>
+    <tr>
+        <td>Datos de Uso/Analytics</td>
+        <td>24 meses anónimizados</td>
+        <td>Mejora de producto</td>
+    </tr>
+</table>
+
+<p><strong>Eliminación de Cuenta Completa:</strong> Si solicitas la eliminación de tu cuenta, eliminaremos todos tus datos personales dentro de 30 días, excepto aquellos requeridos por ley.</p>
+
+<h2>8. TRANSFERENCIAS INTERNACIONALES</h2>
+
+<p>Tu información puede procesarse en:</p>
+<ul>
+    <li><strong>Estados Unidos:</strong> Firebase (Google), Azure</li>
+    <li><strong>Unión Europea:</strong> Según configuración de Firebase</li>
+</ul>
+
+<p><strong>Cumplimiento:</strong> Utilizamos mecanismos legales como Cláusulas Contractuales Estándar (SCC) de la UE para transferencias.</p>
+
+<p>Consulta cómo Google maneja esto: <a href="https://firebase.google.com/support/data-residency" target="_blank">Data Residency for Firebase</a></p>
+
+<h2>9. INFORMACIÓN PARA MENORES</h2>
+
+<div class="warning">
+    <strong>Importante:</strong> APU RUN NO está destinada para menores de 13 años sin consentimiento de padres/tutores.
+</div>
+
+<ul>
+    <li>Si tienes entre 13-18 años: Podemos procesar datos con consentimiento de tu padre/madre</li>
+    <li>Si tienes menos de 13 años: Necesitamos consentimiento verificable de tu tutor legal</li>
+    <li>Si descubrimos que un menor usa sin consentimiento: Eliminaremos su cuenta inmediatamente</li>
+</ul>
+
+<p><strong>Para consentimiento de padres:</strong> Envía email a privacy@teita.ai con:</p>
+<ul>
+    <li>Nombre y email del padre/madre</li>
+    <li>Email y edad del menor</li>
+    <li>Prueba de identidad</li>
+</ul>
+
+<h2>10. CAMBIOS EN ESTA POLÍTICA</h2>
+
+<p><strong>Última actualización:</strong> Noviembre de 2025</p>
+
+<p>Nos reservamos el derecho de actualizar esta política en cualquier momento. Si hacemos cambios significativos:</p>
+<ul>
+    <li>Te notificaremos por email</li>
+    <li>Te lo mostraremos en la app antes de usarla nuevamente</li>
+    <li>Te daremos opción de aceptar o eliminar tu cuenta</li>
+</ul>
+
+<p><strong>Cambios menores:</strong> Se aplican inmediatamente. Podrás verlos en esta página.</p>
+
+<p>Te recomendamos revisar esta política periódicamente.</p>
+
+<h2>11. COMUNICACIÓN Y CONTACTO</h2>
+
+<div class="important">
+    <strong>¿Preguntas sobre privacidad?</strong>
+</div>
+
+<table>
+    <tr>
+        <th>Tipo de Consulta</th>
+        <th>Contacto</th>
+        <th>Tiempo Respuesta</th>
+    </tr>
+    <tr>
+        <td>Solicitud de datos (GDPR/CCPA)</td>
+        <td>privacy@teita.ai</td>
+        <td>30 días</td>
+    </tr>
+    <tr>
+        <td>Queja sobre privacidad</td>
+        <td>privacy@teita.ai</td>
+        <td>15 días</td>
+    </tr>
+    <tr>
+        <td>Soporte general</td>
+        <td>support@teita.ai</td>
+        <td>48 horas</td>
+    </tr>
+    <tr>
+        <td>Incidente de seguridad</td>
+        <td>security@teita.ai</td>
+        <td>24 horas</td>
+    </tr>
+</table>
+
+<p><strong>Autoridades de Protección de Datos:</strong> Si no estás satisfecho con nuestra respuesta, puedes presentar una queja ante tu autoridad local:</p>
+<ul>
+    <li><strong>UE (GDPR):</strong> <a href="https://edpb.ec.europa.eu/about-edpb/board/members_en" target="_blank">European Data Protection Board</a></li>
+    <li><strong>España:</strong> <a href="https://www.aepd.es/" target="_blank">Autoridad de Protección de Datos (AEPD)</a></li>
+    <li><strong>USA (CCPA):</strong> <a href="https://cppa.ca.gov/" target="_blank">California Privacy Protection Agency</a></li>
+</ul>
+
+<h2>12. INFORMACIÓN ADICIONAL</h2>
+
+<h3>12.1 Cookies y Tecnología Similar</h3>
+<p>La aplicación móvil no usa cookies tradicionales, pero usa:</p>
+<ul>
+    <li><strong>Firebase Tokens:</strong> Para mantener tu sesión segura</li>
+    <li><strong>Local Storage:</strong> Para guardar configuración (sin datos sensibles)</li>
+</ul>
+
+<h3>12.2 Enlaces a Terceros</h3>
+<p>La app puede enlazar a sitios de terceros. No somos responsables de sus políticas de privacidad. Te recomendamos revisar sus términos.</p>
+
+<h3>12.3 Cumplimiento Normativo</h3>
+<p>Esta política cumple con:</p>
+<ul>
+    <li>🇪🇺 <strong>GDPR</strong> (Reglamento General de Protección de Datos)</li>
+    <li>🇺🇸 <strong>CCPA</strong> (Ley de Privacidad del Consumidor de California)</li>
+    <li>🇧🇷 <strong>LGPD</strong> (Ley General de Protección de Datos de Brasil)</li>
+    <li>🇪🇸 <strong>LSSI-CE</strong> (Ley de Servicios de la Sociedad de la Información)</li>
+    <li>🏢 <strong>Google Play Data Safety Policies</strong></li>
+</ul>
+
+<h2>13. RESUMEN VISUAL: ¿QUÉ DATOS RECOPILAMOS?</h2>
+
+<pre style="background-color: #f5f5f5; padding: 15px; border-radius: 5px; overflow-x: auto;">
+📱 DATOS QUE PROPORCIONAS
+   ├─ Email ✓
+   ├─ Nombre ✓
+   ├─ Foto de Perfil ✓
+   ├─ Documentos de Entrenamiento (PDFs) ✓
+   └─ Conversaciones con Coach IA ✓
+
+⚙️ DATOS AUTOMÁTICOS (NECESARIOS PARA SEGURIDAD)
+   ├─ Android Device ID (Firebase) ✓
+   ├─ Google Advertising ID ✓
+   ├─ Modelo de Dispositivo
+   ├─ Versión SO
+   └─ Dirección IP
+
+🔐 DATOS COMPARTIDOS CON TERCEROS
+   ├─ Firebase: Device ID, Email, Logs
+   ├─ Azure: Documentos (30 días)
+   └─ Google Analytics: Datos anónimos (opcional)
+
+❌ DATOS QUE NUNCA RECOPILAMOS
+   ├─ Ubicación GPS exacta
+   ├─ Contactos (aunque pides permiso)
+   ├─ Fotos de tu galería (solo si las cargas)
+   └─ Contraseñas (se hashean)
+</pre>
+
+<div class="last-updated">
+    <h3>Versión de esta Política</h3>
+    <ul>
+        <li><strong>Versión:</strong> 1.0</li>
+        <li><strong>Fecha de Publicación:</strong> Noviembre 2025</li>
+        <li><strong>Próxima Revisión:</strong> Mayo 2026</li>
+        <li><strong>Lenguaje Original:</strong> Español</li>
+    </ul>
+
+    <p style="margin-top: 20px; font-size: 0.9em; color: #666;">
+        Esta política se proporciona "TAL CUAL" sin garantías. Teita.ai se reserva el derecho de cambiarla en cualquier momento.
+        <br><br>
+        <strong>Para la versión más actualizada, visita siempre: https://teita.ai/privacy-policy</strong>
+    </p>
+</div>
+
 </body>
 </html>
